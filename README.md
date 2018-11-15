@@ -3,9 +3,10 @@
 
 ### Basic Information
 
-Our project will combine the uTelly API and Fandango’s Rotten Tomatoes API (requires sign up/in) in determining various metrics by which users can compare and contrast movie quality on multiple streaming services. The specific streaming services data we are pulling from the uTelly API are Amazon Instant Videos, Amazon Prime, Netflix, and iTunes. 
+Our project will combine the uTelly API and Fandango’s Rotten Tomatoes API (requires sign up/in) in determining various metrics by which users can compare and contrast movie quality on multiple streaming services. The specific streaming services data we are pulling from the uTelly API are Amazon Instant Videos, Amazon Prime, Netflix, and iTunes. We will be pulling the audience and critic rating data from the Rotten Tomatoes API. Both APIs contain movie titles that can be used as a merge key to compare and contrast the movie ratings and the streaming services they can be found on.  
 
-#### Target Audience: Avid movie watchers, primarily 18 - 25 year olds, who care about the quality of their content.
+#### Target Audience: 
+Avid movie watchers, primarily 18 - 25 year olds, who care about the quality of their content.
 
 #### Questions to Answer:
 
