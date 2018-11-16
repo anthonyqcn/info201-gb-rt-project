@@ -1,5 +1,6 @@
 # INFO 201 Project Proposal: Movie Quality Control
 ## Joon Kim, Brandon Lee, Anthony Nguyen
+## GitHub Repository: https://github.com/anthonyqcn/info201-gb-rt-project
 
 ### Basic Information
 
