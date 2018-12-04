@@ -2,6 +2,9 @@ library('httr')
 library('jsonlite')
 library('dplyr')
 
+source('./infor.R')
+
+
 u_url <- "https://utelly-tv-shows-and-movies-availability-v1.p.mashape.com/lookup"
 u_param <- list(country='us', term='La La Land')
 u_request <- GET(u_url, query = u_param, add_headers("X-Mashape-Key" = "HQmWI1Np7FmshrIu0cWO1GgbBoNlp1QHYMbjsnbezAlS18DkgP","Accept" = "application/json"))
