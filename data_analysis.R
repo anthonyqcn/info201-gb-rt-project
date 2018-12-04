@@ -71,5 +71,4 @@ stream <- sapply(movies, stream_finder)
 
 movie_data <- data.frame(movies, imdb, rt, mc, stream, stringsAsFactors = FALSE)
 row.names(movie_data) <- NULL
-colnames(movie_data) <- c('Movie Title', 'iMDB Score', 'Rotten Tomatoes Score', 'MetaCritic Score', 'Available Streams')
 
