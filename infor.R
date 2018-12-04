@@ -33,3 +33,5 @@ movies <- c("The Shawshank Redemption", "The Godfather",
 "Taxi Driver", "Singin' in the Rain", "Inglourious Basterds",
 "Full Metal Jacket", "To Kill a Mockingbird", "Bicycle Thieves", "The Kid",
 "The Sting", "Toy Story 3")
+
+datamovies <- data.frame(movies)
