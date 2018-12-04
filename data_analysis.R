@@ -2,7 +2,7 @@ library('httr')
 library('jsonlite')
 library('dplyr')
 
-source('./infor.R')
+source('infor.R')
 
 
 u_url <- "https://utelly-tv-shows-and-movies-availability-v1.p.mashape.com/lookup"
