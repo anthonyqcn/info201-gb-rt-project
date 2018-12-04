@@ -29,7 +29,7 @@ create_rt <- function(movie) {
   o_data <- content(o_request, "text")
   o_ret<- fromJSON(o_data)
   if (length(o_ret$'Ratings'[2,2]) > 0) {
-    rt <- append(rt, o_ret$'Ratings'[1,2])
+    rt <- append(rt, o_ret$'Ratings'[2,2])
   } else {
     rt <- append(rt, 'N/A')
   }
@@ -41,7 +41,7 @@ create_mc <- function(movie) {
   o_data <- content(o_request, "text")
   o_ret<- fromJSON(o_data)
   if (length(o_ret$'Ratings'[3,2]) > 0) {
-    mc <- append(mc, o_ret$'Ratings'[1,2])
+    mc <- append(mc, o_ret$'Ratings'[3,2])
   } else {
     mc <- append(mc, 'N/A')
   }
@@ -71,4 +71,5 @@ stream <- sapply(movies, stream_finder)
 
 movie_data <- data.frame(movies, imdb, rt, mc, stream, stringsAsFactors = FALSE)
 row.names(movie_data) <- NULL
+colnames(movie_data) <- c('Movie Title', 'iMDB Score', 'Rotten Tomatoes Score', 'MetaCritic Score', 'Available Streams')
 

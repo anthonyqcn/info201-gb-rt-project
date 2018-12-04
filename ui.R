@@ -1,16 +1,18 @@
 library("shiny")
+library('DT')
     
 my_ui <- fluidPage(
   titlePanel("movies"),
   sidebarLayout(
     sidebarPanel(
-      selectInput("list", "Select a Movie", choices = datamovies$movies),
+      #selectInput("list", "Select a Movie", choices = datamovies$movies),
       textInput("searcher", "Search Movies"),
-      tableOutput('search_results')
+      #actionButton('submit', 'Search'),
+      DT::dataTableOutput("search_results")
     ),
     mainPanel(
-      tableOutput("table"),
-      textOutput("text")
+      #tableOutput("table"),
+      #textOutput("text")
       )
     )
 )
