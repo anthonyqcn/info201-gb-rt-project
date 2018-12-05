@@ -81,18 +81,17 @@ server <- function(input, output){
       ratings[1] <- strsplit(ratings[1], '/')[[1]][1]
       ratings[2] <- strsplit(ratings[2], '%')[[1]][1]
       ratings[3] <- strsplit(ratings[3], '%')[[1]][1]
-      ratings[1] <- as.numeric(ratings[1])
-      print(ratings[1])
       graph_result <- barplot(c(as.numeric(ratings[1]) * 10, as.numeric(ratings[2]), as.numeric(ratings[3])),
                               names.arg = c('iMDB', 'Tomatometer', 'MetaCritic'),
                               xlab = "Rating Source",
                               ylab = "Rating %",
                               main = "Rating of the Given Movie Across iMDB, RT, and MC",
                               col = c('Yellow', 'Red', 'Black'),
+                              ylim=c(0, 100),
                               cex.names=1.5,
-                              cex.axis=1.5,
-                              cex.lab=1.5,
-                              cex.main=1.5)
+                              cex.axis=1.8,
+                              cex.lab=1.8,
+                              cex.main=1.8)
     }
     
   })
@@ -113,9 +112,9 @@ server <- function(input, output){
                             main = "# of Movies Streamed by Services in Top 100 Movies",
                             col = colors,
                             cex.names=1.5,
-                            cex.axis=1.5,
-                            cex.lab=1.5,
-                            cex.main=1.5)
+                            cex.axis=1.8,
+                            cex.lab=1.8,
+                            cex.main=1.8)
   })
 
   output$imdb_table = DT::renderDataTable({
